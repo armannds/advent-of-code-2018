@@ -8,4 +8,10 @@ describe('Day2 solution 1', () => {
     const result = day2.solution1(input)
     expect(result).to.equal(12)
   })
+
+  it('shall produce output of fgij', () => {
+    const input = 'abcde\nfghij\nklmno\npqrst\nfguij\naxcye\nwvxyz'
+    const result = day2.solution2(input)
+    expect(result).to.deep.equal('fgij')
+  })
 })
