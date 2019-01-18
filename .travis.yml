@@ -1,4 +1,10 @@
 language: node_js
+
+addons:
+  sonarcloud:
+    organization: "armannds-github"
+    token:
+      secure: SONAR_TOKEN
 node_js:
  - "node"
 install:

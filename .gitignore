@@ -62,3 +62,6 @@ typings/
 
 # VSCode specific
 .vscode/
+
+# Sonar scanner
+.scannerwork/
