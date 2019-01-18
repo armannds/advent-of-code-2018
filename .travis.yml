@@ -6,8 +6,9 @@ addons:
     token:
       secure: SONAR_TOKEN
 node_js:
- - "node"
+  - "node"
 install:
- - "npm install"
+  - npm install
 script:
- - "npm test"
+  - sonar-scanner
+  - npm test
