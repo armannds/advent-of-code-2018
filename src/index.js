@@ -12,7 +12,8 @@ console.log(`Solution 2 for day 1: ${day1part2}`)
 
 const inputDay2 = fs.readFileSync('./src/day2/input.txt', 'utf-8')
 const day2part1 = day2.solution1(inputDay2)
+const day2part2 = day2.solution2(inputDay2)
 
 console.log('***** Day 2 *****')
 console.log(`Solution 1 for day 2: ${day2part1}`)
-// console.log(`Solution 2 for day 2: ${result02}`)
+console.log(`Solution 2 for day 2: ${day2part2}`)

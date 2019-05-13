@@ -20,6 +20,34 @@ function solution1 (input) {
 
 function solution2 (input) {
   const inputArray = input.split('\n')
+  for (let i = 0; i < inputArray.length - 1; i++) {
+    for (let j = 1; j < inputArray.length; j++) {
+      if (checkDifferences(inputArray[i], inputArray[j]) === 1) {
+        return getCommonLetters(inputArray[i], inputArray[j])
+      }
+    }
+  }
+
+}
+
+function checkDifferences (firstWord, secondWord) {
+  let differences = 0
+  for (let i = 0; i < firstWord.length; i++) {
+    if (firstWord[i] !== secondWord[i]) {
+      differences++
+    }
+  }
+  return differences
+}
+
+function getCommonLetters (firstWord, secondWord) {
+  let commonLetters = []
+  for (let i = 0; i < firstWord.length; i++) {
+    if (firstWord[i] === secondWord[i]) {
+      commonLetters.push(firstWord[i])
+    }
+  }
+  return commonLetters.join('')
 }
 
 module.exports = {
