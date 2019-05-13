@@ -4,7 +4,6 @@ sudo: required
 addons:
   sonarcloud:
     organization: "armannds-github"
-    token: $SONAR_TOKEN
 
 node_js:
   - "node"
