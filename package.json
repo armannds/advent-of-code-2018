@@ -4,8 +4,8 @@
   "description": "My solutions to advent of code 2018 in node.",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha",
-    "report-coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "mocha",
+    "report-coverage": "nyc --reporter=lcov --reporter=text-lcov npm test | coveralls",
     "start": "node src/index.js"
   },
   "repository": {
@@ -21,7 +21,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.0.3",
-    "mocha": "^5.2.0",
+    "mocha": "^6.1.4",
     "mocha-lcov-reporter": "^1.3.0",
     "nyc": "^14.1.1",
     "standard": "^12.0.1"
