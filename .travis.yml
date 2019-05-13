@@ -14,8 +14,7 @@ install:
 script:
   - sonar-scanner
   - npm test
-
-after_success: npm run coverage
+  - npm run report-coverage
 
 cache:
   directories:
