@@ -15,6 +15,8 @@ script:
   - sonar-scanner
   - npm test
 
+after_success: npm run coverage
+
 cache:
   directories:
   - '$HOME/.sonar/cache'

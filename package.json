@@ -4,7 +4,8 @@
   "description": "My solutions to advent of code 2018 in node.",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha --recursive || true",
+    "test": "nyc --reporter=html --reporter=text mocha --recursive || true",
+    "coverage": "nyc report --reporter=text-lcov",
     "start": "node src/index.js"
   },
   "repository": {
